@@ -4,3 +4,4 @@
 nuxt.d.ts
 .output
 /dist/
+/CNAME
