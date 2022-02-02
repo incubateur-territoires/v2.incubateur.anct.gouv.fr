@@ -1,3 +1,4 @@
+<!-- As of 2/2/22 this is unused. -->
 <template>
   <div>
     <div class="fr-checkbox-group">

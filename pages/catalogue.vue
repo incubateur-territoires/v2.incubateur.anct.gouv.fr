@@ -8,13 +8,17 @@
           <ul class="fr-btns-group fr-btns-group--inline">
             <li v-for="decoupages_administratifs in facets_groups.decoupages_administratifs">
               <SelectButton
-              @change="filter('decoupages_administratifs', decoupages_administratifs.id, $event)"
-              :label="decoupages_administratifs.nom" />
+                @change="filter('decoupages_administratifs', decoupages_administratifs.id, $event)"
+                :label="decoupages_administratifs.nom"
+              />
             </li>
           </ul>
           <div class="fr-col-12 fr-col-lg-6" v-for="service in services">
-            <Card :title="service.nom" :description="service.description"
-              image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WXUbigVrd4W8p067r5e6ggAAAA%26pid%3DApi&f=1" />
+            <Card
+              :title="service.nom"
+              :description="service.description"
+              image="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.WXUbigVrd4W8p067r5e6ggAAAA%26pid%3DApi&f=1"
+            />
           </div>
         </div>
       </section>
@@ -25,7 +29,9 @@
             <ul class="fr-btns-group fr-btns-group--inline">
               <li v-for="thematique in facets_groups.thematiques">
                 <SelectButton
-              @change="filter('thematiques', thematique.id, $event)" :label="thematique.thematique" />
+                  @change="filter('thematiques', thematique.id, $event)"
+                  :label="thematique.thematique"
+                />
               </li>
             </ul>
           </div>
