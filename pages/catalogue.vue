@@ -43,6 +43,12 @@
 
 <script>
   export default {
+    head() {
+      return {
+        title: 'Incubateur des territoires - Catalogue'
+      }
+    },
+
     created() {
       this.$store.dispatch('services/init')
     },
