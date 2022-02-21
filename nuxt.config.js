@@ -1,3 +1,10 @@
+const IS_DEV_ENVIRONMENT = process.env.NODE_ENV === 'development';
+const isUndefined = (environmentVariable) =>  typeof environmentVariable === 'undefined'
+
+const {
+  MATOMO_URL, MATOMO_SITE_ID, MATOMO_CONSENT_REQUIRED, MATOMO_DO_NOT_TRACK
+} = process.env;
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -5,6 +12,8 @@ export default {
   generate: {
     dir: 'docs'
   },
+
+  telemetry: false,
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -46,7 +55,19 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxt/http'
+    '@nuxt/http',
+    [
+      'nuxt-matomo',
+      {
+        matomoUrl: MATOMO_URL || 'http://localhost:8080',
+        siteId: MATOMO_SITE_ID || 1,
+        onMetaChange: true,
+        consentRequired: isUndefined(MATOMO_CONSENT_REQUIRED) || !!MATOMO_CONSENT_REQUIRED,
+        doNotTrack: isUndefined(MATOMO_DO_NOT_TRACK) || !!MATOMO_DO_NOT_TRACK,
+        debug: IS_DEV_ENVIRONMENT,
+        verbose: IS_DEV_ENVIRONMENT
+      },
+    ],
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
