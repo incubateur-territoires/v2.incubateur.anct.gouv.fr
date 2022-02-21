@@ -1,12 +1,28 @@
 # incubateur-territoires
 
-
 ## Deploy to Prod
 
 `make deploy` will generate static files to _/docs_ dir and
 do a couple of required things for deployment.
 It pushes the `/docs/` directory that is served by Github
 and should be pushed for deploying an update.
+
+## Environment variables
+
+| name | description | default value |
+| --- | --- | --- |
+| MATOMO_URL | Url to matomo installation | `http://localhost:8080` |
+| MATOMO_SITE_ID | Matomo site id | `1` |
+| MATOMO_CONSENT_REQUIRED | If true, Matomo will not start tracking until the user has given consent | `true` |
+| MATOMO_DO_NOT_TRACK | If true, dont track users who have set Mozilla's Do Not Track setting | `true` |
+
+## Matomo configuration
+
+Matomo is configured thanks to (a dedicated nuxt module)[https://github.com/pimlie/nuxt-matomo]. Current configuration is set to behave as:
+- User consent and Do not track options are set to `true` by default
+- In dev environment, debug and verbose mode are active
+
+__Warning: due to some (caveats[https://github.com/pimlie/nuxt-matomo#caveats]) we use onMetaChange option which requires pages to have a (head)[https://nuxtjs.org/docs/components-glossary/head/] property__
 
 
 ## Build Setup

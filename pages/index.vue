@@ -55,8 +55,15 @@
 
 <script>
   export default {
-    layout: 'raw'
+    layout: 'raw',
+
+    head() {
+      return {
+        title: 'Incubateur des territoires - Accueil'
+      }
+    }
   }
+
 </script>
 
 <style>
