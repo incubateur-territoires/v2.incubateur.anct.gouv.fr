@@ -9,7 +9,7 @@ env:
   API_URL: ${{ secrets.API_URL }}
 
 jobs:
-  install:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,39 +22,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: project-artifact
-          path: .
-
-  test:
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Load project
-        uses: actions/download-artifact@v2
-        with:
-          name: project-artifact
-
-      - name: Lint
-        run: yarn lint
-
-  build:
-    needs: install
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Load project
-        uses: actions/download-artifact@v2
-        with:
-          name: project-artifact
 
       - name: Build
         run: yarn generate
