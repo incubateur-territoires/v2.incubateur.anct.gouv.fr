@@ -8,9 +8,9 @@
         Nous accompagnons les territoires vers leur transition numérique le plus simplement
         possible.
       </p>
-      <nuxt-link class="it-primary" to="https://beta.gouv.fr/recrutement">
+      <a class="it-primary" href="https://beta.gouv.fr/recrutement" target="_blank" rel="noopener" >
         Consulter toutes les offres de la communauté Beta.gouv.fr
-      </nuxt-link>
+      </a>
     </div>
 
     <HorizontalCard
