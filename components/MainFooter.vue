@@ -15,6 +15,7 @@
                     title="Consulter le Facebook de l'Incubateur des Territoires"
                     href="https://facebook.com/"
                     target="_blank"
+										rel="noopener"
                   >
                     facebook
                   </a>
@@ -25,6 +26,7 @@
                     title="Consulter le Twitter de l'Incubateur des Territoires"
                     href="https://twitter.com/"
                     target="_blank"
+										rel="noopener"
                   >
                     twitter
                   </a>
@@ -35,6 +37,7 @@
                     title="Consulter le Linkedin de l'Incubateur des Territoires"
                     href="https://linkedin.com/"
                     target="_blank"
+										rel="noopener"
                   >
                     linkedin
                   </a>
@@ -62,10 +65,17 @@
                 href="https://anct.gouv.fr" title="Visiter le site de l'ANCT">Agence Nationale de la
                 Cohésion des Territoires</a>.
               Le code source de ce site web est disponible en licence libre.
-              Le design de ce site est conçu avec le <a
+              Le design de ce site est conçu avec le
+							<a
                 href="https://gouvfr.atlassian.net/wiki/spaces/DB/overview?homepageId=145359476"
-                title="Consulter la documentation du Système de Design de l'État" target="_blank">système de design de
-                l’État</a>.</p>
+                title="Consulter la documentation du Système de Design de l'État"
+								target="_blank"
+						    rel="noopener"
+				      >
+							  système de design de l’État
+				      </a>
+							.
+				    </p>
             <ul class="fr-footer__content-list">
               <li class="fr-footer__content-item">
                 <a class="fr-footer__content-link" href="https://legifrance.gouv.fr">legifrance.gouv.fr</a>
@@ -102,7 +112,7 @@
           </ul>
           <div class="fr-footer__bottom-copy">
             <p>Sauf mention contraire, tous les textes de ce site sont sous <a
-                href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank">licence
+                href="https://github.com/etalab/licence-ouverte/blob/master/LO.md" target="_blank" rel="noopener">licence
                 etalab-2.0</a>
             </p>
           </div>

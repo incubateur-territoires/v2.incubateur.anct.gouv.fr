@@ -1,15 +1,14 @@
 <template>
   <div>
     <div class="fr-mb-5w">
-      <h1 class="fr-text-title-blue-france"
-
-      >Recrutement
+      <h1 class="fr-text-title-blue-france">
+			  Recrutement
       </h1>
       <p>
         Nous accompagnons les territoires vers leur transition numérique le plus simplement
         possible.
       </p>
-      <nuxt-link class="it-primary" to="">
+      <nuxt-link class="it-primary" to="https://beta.gouv.fr/recrutement">
         Consulter toutes les offres de la communauté Beta.gouv.fr
       </nuxt-link>
     </div>
@@ -19,7 +18,7 @@
       :key="`recruitment-card${index}`"
       class="fr-mt-2w"
       :title="card.title"
-      :link-to='card.linkTo'
+      :link-to="card.linkTo"
       :description="card.description"
       :detail="card.detail"
     />
@@ -27,7 +26,7 @@
 </template>
 
 <script>
-import HorizontalCard from '@/components/Cards/HorizontalCard';
+import HorizontalCard from '~/components/Cards/HorizontalCard';
 
 export default {
   name: 'RecruitmentPage',
