@@ -33,14 +33,14 @@
       <div class="fr-container fr-py-6w">
         <div class="fr-grid-row">
           <div class="fr-col fr-col-md-8 fr-col-10">
-            <h2>Besoin d'aide ?</h2>
+            <h2>Besoin d'aide</h2>
             <p>
               <a href="https://forum.incubateur.anct.gouv.fr" title="consulter le Forum des Territoires" target="_blank" rel="noopener">
                 Besoin de solliciter de l’aide ou un retour d’expérience auprès d’autres collectivités ?
               </a>
             </p>
             <p>
-              Le forum est un outil de communication et d’échanges entre agents et élus des collectivités territoriales.</a>
+              Le forum est un outil de communication et d’échanges entre agents et élus des collectivités territoriales.
             </p>
             <a class="fr-btn fr-mt-4w" href="https://forum.incubateur.anct.gouv.fr" title="consulter le Forum des Territoires">
               Poser une question
@@ -55,7 +55,7 @@
 
 <script>
   export default {
-    layout: 'raw'
+    layout: 'raw',
   }
 </script>
 

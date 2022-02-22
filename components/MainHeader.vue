@@ -12,16 +12,24 @@
                 </p>
               </div>
               <div class="fr-header__operator">
-                <img src="@/assets/logo.svg" class="fr-responsive-img" style="max-height:3rem;"
-                  alt="Incubateur des Territoires" />
+                <img
+                  src="@/assets/logo.svg" class="fr-responsive-img"
+                  style="max-height:3rem;"
+                  alt="Incubateur des Territoires"
+                />
               </div>
               <div class="fr-header__navbar">
                 <!-- <button class="fr-btn--search fr-btn" data-fr-opened="false" aria-controls="modal-866"
                   title="Rechercher">
                   Rechercher
                 </button> -->
-                <button class="fr-btn--menu fr-btn" data-fr-opened="false" aria-controls="modal-870"
-                  aria-haspopup="menu" title="Menu" id="fr-btn-menu-mobile-4">
+                <button
+                  id="fr-btn-menu-mobile-4"
+                  class="fr-btn--menu fr-btn"
+                  data-fr-opened="false"
+                  aria-controls="modal-870"
+                  aria-haspopup="menu" title="Menu"
+                >
                   Menu
                 </button>
               </div>
@@ -65,11 +73,11 @@
         </div>
       </div>
     </div>
-    <div class="fr-header__menu fr-modal" id="modal-870" aria-labelledby="fr-btn-menu-mobile-4">
+    <div id="modal-870" class="fr-header__menu fr-modal" aria-labelledby="fr-btn-menu-mobile-4">
       <div class="fr-container">
         <button class="fr-link--close fr-link" aria-controls="modal-870">Fermer</button>
         <div class="fr-header__menu-links"></div>
-        <nav class="fr-nav" id="navigation-869" role="navigation" aria-label="Menu principal">
+        <nav id="navigation-869" class="fr-nav" role="navigation" aria-label="Menu principal">
           <ul class="fr-nav__list">
             <li class="fr-nav__item">
               <nuxt-link class="fr-nav__link" to="/actualites">Actualités</nuxt-link>

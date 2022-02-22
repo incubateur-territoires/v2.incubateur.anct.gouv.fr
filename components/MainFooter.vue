@@ -10,16 +10,34 @@
               </p>
               <ul class="fr-links-group fr-links-group--lg">
                 <li>
-                  <a class="fr-link--facebook fr-link" title="Consulter le Facebook de l'Incubateur des Territoires"
-                    href="https://facebook.com/" target="_blank">facebook</a>
+                  <a
+                    class="fr-link--facebook fr-link"
+                    title="Consulter le Facebook de l'Incubateur des Territoires"
+                    href="https://facebook.com/"
+                    target="_blank"
+                  >
+                    facebook
+                  </a>
                 </li>
                 <li>
-                  <a class="fr-link--twitter fr-link" title="Consulter le Twitter de l'Incubateur des Territoires"
-                    href="https://twitter.com/" target="_blank">twitter</a>
+                  <a
+                    class="fr-link--twitter fr-link"
+                    title="Consulter le Twitter de l'Incubateur des Territoires"
+                    href="https://twitter.com/"
+                    target="_blank"
+                  >
+                    twitter
+                  </a>
                 </li>
                 <li>
-                  <a class="fr-link--linkedin fr-link" title="Consulter le Linkedin de l'Incubateur des Territoires"
-                    href="https://linkedin.com/" target="_blank">linkedin</a>
+                  <a
+                    class="fr-link--linkedin fr-link"
+                    title="Consulter le Linkedin de l'Incubateur des Territoires"
+                    href="https://linkedin.com/"
+                    target="_blank"
+                  >
+                    linkedin
+                  </a>
                 </li>
               </ul>
             </div>
@@ -28,7 +46,7 @@
       </div>
     </div>
 
-    <footer class="fr-footer" role="contentinfo" id="fr-footer-1">
+    <footer id="fr-footer-1" class="fr-footer" role="contentinfo">
       <div class="fr-container">
         <div class="fr-footer__body">
           <div class="fr-footer__brand fr-enlarge-link">

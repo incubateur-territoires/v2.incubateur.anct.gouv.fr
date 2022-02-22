@@ -1,17 +1,25 @@
 <template>
-  <button :class="`fr-btn ${selected ? '' : 'fr-btn--secondary'}`" @click="toggle" :selected="selected">{{ label }}</button>
+  <button :class="`fr-btn ${selected ? '' : 'fr-btn--secondary'}`" :selected="selected" @click="toggle">{{ label }}</button>
 </template>
 
 <script>
   export default {
     props: {
-      label: String,
-      value: String,
+      label: {
+        type: String,
+        required: true,
+      },
+      value: {
+        type: String,
+        required: true,
+      },
       selected: {
         type: Boolean,
         default: false,
       },
     },
+
+    emits: ['change'],
 
     data() {
       return {
@@ -20,13 +28,10 @@
     },
 
     methods: {
-      toggle(event) {
-        this.selected = !this.selected
+      toggle() {
         this.$emit('change', this.selected)
       }
     },
-
-    emits: ['change'],
 
   }
 </script>

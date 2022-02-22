@@ -11,8 +11,8 @@ export const state = () => ({
 })
 
 export const actions = {
-  async init({ state, commit }) {
-    const response = await this.$http.$post('https://directus.incubateur.anct.gouv.fr/graphql?access_token=confidant-ample-slapping-vitamins-freewill-unlivable', {
+  async init({ _, commit }) {
+    const response = await this.$axios.$post('/graphql?access_token=confidant-ample-slapping-vitamins-freewill-unlivable', {
         query: `
           query {
             catalogue {
