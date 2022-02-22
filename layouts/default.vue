@@ -1,13 +1,13 @@
 <template>
   <div>
-    <Header />
+    <MainHeader />
     <main class="fr-container fr-py-6w">
       <div class="fr-grid-row">
-        <div class="fr-col-12">
+        <div class="fr-col-9">
           <nuxt />
         </div>
       </div>
     </main>
-    <Footer />
+    <MainFooter />
   </div>
 </template>

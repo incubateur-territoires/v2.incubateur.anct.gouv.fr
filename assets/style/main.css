@@ -1,0 +1,5 @@
+@import "@gouvfr/dsfr/dist/dsfr/dsfr.css";
+
+h1, .it-primary {
+  color: var(--text-title-blue-france);
+}

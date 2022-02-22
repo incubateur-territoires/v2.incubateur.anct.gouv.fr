@@ -1,0 +1,52 @@
+name: Deploy to Github Pages
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  API_URL: ${{ secrets.API_URL }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup node env
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 16
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn generate
+
+      - name: Upload built
+        uses: actions/download-artifact@v2
+        with:
+          name: built-project
+          path: docs
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Load built project
+        uses: actions/download-artifact@v2
+        with:
+          name: built-project
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
