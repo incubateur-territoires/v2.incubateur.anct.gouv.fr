@@ -1,0 +1,34 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "extends": [
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:nuxt/recommended",
+    "prettier"
+  ],
+  "ignorePatterns": ["/docs/**"],
+  "rules": {
+    "vue/component-name-in-template-casing": [
+      "error",
+      "PascalCase"
+    ],
+    "no-unused-vars": [
+      "error"
+    ],
+    "camelcase": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "pages/**",
+        "layouts/**"
+      ],
+      "rules": {
+        "vue/multi-word-component-names": 0
+      }
+    }
+  ]
+}
